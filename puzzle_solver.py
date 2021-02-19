@@ -1,12 +1,3 @@
-# with open('words_alpha.txt', 'r') as f:
-#     dictionary = [x.rstrip().lower() for x in f.readlines()]
-#
-# with open('first_names.all.txt', 'r') as f:
-#     first_names = [x.rstrip().lower() for x in f.readlines()]
-#
-# with open('last_names.all.txt', 'r') as f:
-#     last_names = [x.rstrip().lower() for x in f.readlines()]
-
 def load_words():
     with open('words_alpha.txt') as word_file:
         valid_words = set(word_file.read().split())
