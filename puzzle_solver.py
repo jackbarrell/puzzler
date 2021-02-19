@@ -21,12 +21,10 @@ def load_words():
 
     return valid_words, first_names, last_names
 
-def puzzle_b():
-    puzzle = '*sled re*nt'
-    puzzle = '*stro sou*er'
-    puzzle = '*ion fri*'
-    puzzle = 'pa*ma vi*nt'
+def puzzler(puzzle):
     first_word, second_word = puzzle.split(' ')
+    possible_first_names = []
+    possible_second_names = []
 
     i = 0
     for name in last_names:
@@ -71,13 +69,10 @@ def puzzle_b():
 
 if __name__ == '__main__':
     english_words, first_names, last_names = load_words()
-    # demo print
 
-# first_names = ['jack', 'sanjay', 'leah', 'john', 'bob', 'james']
-# second_names = ['smith', 'hitch', 'blah', 'dole', 'charles']
+    puzzle = '*sled re*nt'
+    puzzle = '*stro sou*er'
+    puzzle = '*ion fri*'
+    puzzle = 'pa*ma vi*nt'
 
-
-    possible_first_names = []
-    possible_second_names = []
-
-    puzzle_b()
+    puzzler(puzzle)
